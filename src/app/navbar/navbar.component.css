@@ -1,0 +1,22 @@
+nav{
+    font-family: 'Lato', sans-serif;
+    background-color: #b996a8;
+  }
+  
+  .logo{
+    color: #fff;
+    font-family: 'cabin', sans-serif;
+    font-size: 3.5em;
+    padding-left: 5%;
+  }
+  
+  ul.nav a{
+    transition:0.3s ease;
+  }
+  
+  ul.nav a:hover{
+    color: #fff;
+    
+  }
+  
+   

@@ -1,0 +1,16 @@
+ul { padding:0; width:1200px; margin:20px auto}
+li { display:inline;}
+    .tn{
+ margin:4px 4px;
+ box-shadow:#555 1px 1px 8px 1px;
+ cursor: pointer;
+ object-fit: cover;
+ height: 420px;
+    }
+.modal-content {
+  width: 1200px !important;
+}
+
+h1, h2{
+    margin-bottom: 20px;
+}

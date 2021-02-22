@@ -1,0 +1,16 @@
+
+<nav class="navbar ">
+    <a class="nav-link" [class.active]="filterBy==='all'" (click)="filterBy='all'">Tổng Hợp</a>
+    <a class="nav-link" [class.active]="filterBy==='boats'" (click)="filterBy='boats'">Chân váy</a>
+    <a class="nav-link" [class.active]="filterBy==='camping'" (click)="filterBy='camping'">Đầm</a>
+    <a class="nav-link" [class.active]="filterBy==='library'" (click)="filterBy='library'">Jumpsuit</a>
+</nav>
+<div class="row">
+    <ul id="thumbnailsList">
+        <li *ngFor="let image of (visibleImages | imageFilter:filterBy)" >
+            <a [routerLink] = "['/product', image.id]">
+                <img src="{{image.url}}" class="tn rounded img-center img-thumbnail col-sm-2.5" width=20% height=20%>
+            </a>
+        </li>
+    </ul>
+</div>
